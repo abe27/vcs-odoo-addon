@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_region_thai_region_thai,region_thai.region_thai,model_region_thai_region_thai,base.group_user,1,1,1,1
+access_custom_table_region_thailand,custom_table.region_thailand,model_custom_table_region_thailand,base.group_user,1,1,1,1
+access_custom_table_province,custom_table.province,model_custom_table_province,base.group_user,1,1,1,1
+access_custom_table_district,custom_table.district,model_custom_table_district,base.group_user,1,1,1,1
+access_custom_table_tambon,custom_table.tambon,model_custom_table_tambon,base.group_user,1,1,1,1
+access_custom_table_zipcode,custom_table.zipcode,model_custom_table_zipcode,base.group_user,1,1,1,1

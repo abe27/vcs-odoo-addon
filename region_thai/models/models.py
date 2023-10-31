@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 
-# class region_thai(models.Model):
-#     _name = 'region_thai.region_thai'
-#     _description = 'region_thai.region_thai'
+# class province_region_thailand(models.Model):
+#     _name = 'province_region_thailand.province_region_thailand'
+#     _description = 'province_region_thailand.province_region_thailand'
 
 #     name = fields.Char()
 #     value = fields.Integer()
@@ -16,3 +17,66 @@
 #     def _value_pc(self):
 #         for record in self:
 #             record.value2 = float(record.value) / 100
+
+class RegionThailand(models.Model):
+    _name = 'custom_table.region_thailand'
+    _description = 'custom_table.region_thailand'
+
+    name = fields.Char(size=50, string="ชื่อ",  required=True)
+    description = fields.Text(string="รายละเอียด")
+    is_active = fields.Boolean(string="สถานะ", default=True)
+    
+    # @api.constrains('name')
+    # def _check_duplicate(self):
+    #     for rec in self:
+    #         domain = [('name', '=', rec.name)]
+    #         count = self.sudo().search_count(domain)
+
+    #         if count > 0:
+    #             raise ValidationError(("The Name should be unique"))
+    
+class Province(models.Model):
+    _name = 'custom_table.province'
+    _description = 'custom_table.province'
+
+    region_id = fields.Many2one('custom_table.region_thailand', string="ภูมิภาค",  required=True)
+    province_id = fields.Char(size=50, string="รหัส",  required=True)
+    name = fields.Char(size=50, string="ชื่อ",  required=True)
+    description = fields.Text(string="รายละเอียด")
+    is_active = fields.Boolean(string="สถานะ", default=True)
+    
+    # @api.constrains('name')
+    # def _check_duplicate(self):
+    #     for rec in self:
+    #         domain = [('name', '=', rec.name)]
+    #         count = self.sudo().search_count(domain)
+
+    #         if count > 0:
+    #             raise ValidationError(("The Name should be unique"))
+    
+class District(models.Model):
+    _name = 'custom_table.district'
+    _description = 'custom_table.district'
+
+    province_id = fields.Many2one('custom_table.province', string="รหัสจังหวัด",  required=True)
+    name = fields.Char(size=50, string="ชื่อ",  required=True)
+    description = fields.Text(string="รายละเอียด")
+    is_active = fields.Boolean(string="สถานะ", default=True)
+    
+class Tambon(models.Model):
+    _name = 'custom_table.tambon'
+    _description = 'custom_table.tambon'
+
+    district_id = fields.Many2one('custom_table.district', string="รหัสอำเภอ",  required=True)
+    name = fields.Char(size=50, string="ชื่อ",  required=True)
+    description = fields.Text(string="รายละเอียด")
+    is_active = fields.Boolean(string="สถานะ", default=True)
+
+class Zipcode(models.Model):
+    _name = 'custom_table.zipcode'
+    _description = 'custom_table.zipcode'
+
+    tambon_id = fields.Many2one('custom_table.tambon', string="รหัสตำบล",  required=True)
+    name = fields.Char(size=10, string="รหัสไปรษณี",  required=True)
+    description = fields.Text(string="รายละเอียด")
+    is_active = fields.Boolean(string="สถานะ", default=True)

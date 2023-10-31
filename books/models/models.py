@@ -5,8 +5,8 @@ from odoo.exceptions import ValidationError
 
 
 class books(models.Model):
-    _name = 'vcs.books'
-    _description = 'vcs.books'
+    _name = 'custom.books'
+    _description = 'custom.books'
 
     name = fields.Char()
     value = fields.Integer()

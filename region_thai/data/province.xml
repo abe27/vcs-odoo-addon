@@ -1,0 +1,563 @@
+<odoo>
+    <data>
+        <!-- Start Seed Province -->
+        <!-- กลาง -->
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">10</field>
+            <field name="name">กรุงเทพมหานคร</field>
+            <field name="description">Bangkok</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">11</field>
+            <field name="name">สมุทรปราการ</field>
+            <field name="description">Samut Prakan</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">12</field>
+            <field name="name">นนทบุรี</field>
+            <field name="description">Nonthaburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">13</field>
+            <field name="name">ปทุมธานี</field>
+            <field name="description">Pathum Thani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">14</field>
+            <field name="name">พระนครศรีอยุธยา</field>
+            <field name="description">Phra Nakhon Si Ayutthaya</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">15</field>
+            <field name="name">อ่างทอง</field>
+            <field name="description">Ang Thong</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">16</field>
+            <field name="name">ลพบุรี</field>
+            <field name="description">Lop Buri</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">17</field>
+            <field name="name">สิงห์บุรี</field>
+            <field name="description">Sing Buri</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">18</field>
+            <field name="name">ชัยนาท</field>
+            <field name="description">Chai Nat</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">19</field>
+            <field name="name">สระบุรี</field>
+            <field name="description">Saraburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">26</field>
+            <field name="name">นครนายก</field>
+            <field name="description">Nakhon Nayok</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">60</field>
+            <field name="name">นครสวรรค์</field>
+            <field name="description">Nakhon Sawan</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">61</field>
+            <field name="name">อุทัยธานี</field>
+            <field name="description">Uthai Thani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">62</field>
+            <field name="name">กำแพงเพชร</field>
+            <field name="description">Kamphaeng Phet</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">64</field>
+            <field name="name">สุโขทัย</field>
+            <field name="description">Sukhothai</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">65</field>
+            <field name="name">พิษณุโลก</field>
+            <field name="description">Phitsanulok</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">66</field>
+            <field name="name">พิจิตร</field>
+            <field name="description">Phichit</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">67</field>
+            <field name="name">เพชรบูรณ์</field>
+            <field name="description">Phetchabun</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">72</field>
+            <field name="name">สุพรรณบุรี</field>
+            <field name="description">Suphan Buri</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">73</field>
+            <field name="name">นครปฐม</field>
+            <field name="description">Nakhon Pathom</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">74</field>
+            <field name="name">สมุทรสาคร</field>
+            <field name="description">Samut Sakhon</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">1</field>
+            <field name="province_id">75</field>
+            <field name="name">สมุทรสงคราม</field>
+            <field name="description">Samut Songkhram</field>
+            <field name="is_active">True</field>
+        </record>
+
+        <!-- ออก -->
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">20</field>
+            <field name="name">ชลบุรี</field>
+            <field name="description">Chon Buri</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">21</field>
+            <field name="name">ระยอง</field>
+            <field name="description">Rayong</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">22</field>
+            <field name="name">จันทบุรี</field>
+            <field name="description">Chanthaburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">23</field>
+            <field name="name">ตราด</field>
+            <field name="description">Trat</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">24</field>
+            <field name="name">ฉะเชิงเทรา</field>
+            <field name="description">Chachoengsao</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">25</field>
+            <field name="name">ปราจีนบุรี</field>
+            <field name="description">Prachin Buri</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">2</field>
+            <field name="province_id">27</field>
+            <field name="name">สระแก้ว</field>
+            <field name="description">Sa kaeo</field>
+            <field name="is_active">True</field>
+        </record>
+
+        <!-- ออกเฉียงเหนือ -->
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">27</field>
+            <field name="name">สระแก้ว</field>
+            <field name="description">Sa kaeo</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">30</field>
+            <field name="name">นครราชสีมา</field>
+            <field name="description">Nakhon Ratchasima</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">31</field>
+            <field name="name">บุรีรัมย์</field>
+            <field name="description">Buri Ram</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">32</field>
+            <field name="name">สุรินทร์</field>
+            <field name="description">Surin</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">33</field>
+            <field name="name">ศรีสะเกษ</field>
+            <field name="description">Si Sa Ket</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">34</field>
+            <field name="name">อุบลราชธานี</field>
+            <field name="description">Ubon Ratchathani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">35</field>
+            <field name="name">ยโสธร</field>
+            <field name="description">Yasothon</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">36</field>
+            <field name="name">ชัยภูมิ</field>
+            <field name="description">Chaiyaphum</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">37</field>
+            <field name="name">อำนาจเจริญ</field>
+            <field name="description">Amnat Charoen</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">38</field>
+            <field name="name">บึงกาฬ</field>
+            <field name="description">Bueng Kan</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">39</field>
+            <field name="name">หนองบัวลำภู</field>
+            <field name="description">Nong Bua Lam Phu</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">40</field>
+            <field name="name">ขอนแก่น</field>
+            <field name="description">Khon Kaen</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">41</field>
+            <field name="name">อุดรธานี</field>
+            <field name="description">Udon Thani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">42</field>
+            <field name="name">เลย</field>
+            <field name="description">Loei</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">43</field>
+            <field name="name">หนองคาย</field>
+            <field name="description">Nong Khai</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">44</field>
+            <field name="name">มหาสารคาม</field>
+            <field name="description">Maha Sarakham</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">45</field>
+            <field name="name">ร้อยเอ็ด</field>
+            <field name="description">Roi Et</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">46</field>
+            <field name="name">กาฬสินธุ์</field>
+            <field name="description">Kalasin</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">47</field>
+            <field name="name">สกลนคร</field>
+            <field name="description">Sakon Nakhon</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">48</field>
+            <field name="name">นครพนม</field>
+            <field name="description">Nakhon Phanom</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">3</field>
+            <field name="province_id">49</field>
+            <field name="name">มุกดาหาร</field>
+            <field name="description">Mukdahan</field>
+            <field name="is_active">True</field>
+        </record>
+
+        <!-- ภาคเหนือ -->
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">50</field>
+            <field name="name">เชียงใหม่</field>
+            <field name="description">Chiang Mai</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">51</field>
+            <field name="name">ลำพูน</field>
+            <field name="description">Lamphun</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">52</field>
+            <field name="name">ลำปาง</field>
+            <field name="description">Lampang</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">53</field>
+            <field name="name">อุตรดิตถ์</field>
+            <field name="description">Uttaradit</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">54</field>
+            <field name="name">แพร่</field>
+            <field name="description">Phrae</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">55</field>
+            <field name="name">น่าน</field>
+            <field name="description">Nan</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">56</field>
+            <field name="name">พะเยา</field>
+            <field name="description">Phayao</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">57</field>
+            <field name="name">เชียงราย</field>
+            <field name="description">Chiang Rai</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">4</field>
+            <field name="province_id">58</field>
+            <field name="name">แม่ฮ่องสอน</field>
+            <field name="description">Mae Hong Son</field>
+            <field name="is_active">True</field>
+        </record>
+
+        <!-- ภาคตะวันตก -->
+        <record model="custom_table.province">
+            <field name="region_id">5</field>
+            <field name="province_id">63</field>
+            <field name="name">ตาก</field>
+            <field name="description">Tak</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">5</field>
+            <field name="province_id">70</field>
+            <field name="name">ราชบุรี</field>
+            <field name="description">Ratchaburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">5</field>
+            <field name="province_id">71</field>
+            <field name="name">กาญจนบุรี</field>
+            <field name="description">Kanchanaburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">5</field>
+            <field name="province_id">76</field>
+            <field name="name">เพชรบุรี</field>
+            <field name="description">Phetchaburi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">5</field>
+            <field name="province_id">77</field>
+            <field name="name">ประจวบคีรีขันธ์</field>
+            <field name="description">Prachuap Khiri Khan</field>
+            <field name="is_active">True</field>
+        </record>
+
+        <!-- ภาคใต้ -->
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">80</field>
+            <field name="name">นครศรีธรรมราช</field>
+            <field name="description">Nakhon Si Thammarat</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">81</field>
+            <field name="name">กระบี่</field>
+            <field name="description">Krabi</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">82</field>
+            <field name="name">พังงา</field>
+            <field name="description">Phangnga</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">83</field>
+            <field name="name">ภูเก็ต</field>
+            <field name="description">Phuket</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">84</field>
+            <field name="name">สุราษฎร์ธานี</field>
+            <field name="description">Surat Thani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">85</field>
+            <field name="name">ระนอง</field>
+            <field name="description">Ranong</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">86</field>
+            <field name="name">ชุมพร</field>
+            <field name="description">Chumphon</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">90</field>
+            <field name="name">สงขลา</field>
+            <field name="description">Songkhla</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">91</field>
+            <field name="name">สตูล</field>
+            <field name="description">Satun</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">92</field>
+            <field name="name">ตรัง</field>
+            <field name="description">Trang</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">93</field>
+            <field name="name">พัทลุง</field>
+            <field name="description">Phatthalung</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">94</field>
+            <field name="name">ปัตตานี</field>
+            <field name="description">Pattani</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">95</field>
+            <field name="name">ยะลา</field>
+            <field name="description">Yala</field>
+            <field name="is_active">True</field>
+        </record>
+        <record model="custom_table.province">
+            <field name="region_id">6</field>
+            <field name="province_id">96</field>
+            <field name="name">นราธิวาส</field>
+            <field name="description">Narathiwat</field>
+            <field name="is_active">True</field>
+        </record>
+        <!-- End Seed Province -->
+    </data>
+</odoo>

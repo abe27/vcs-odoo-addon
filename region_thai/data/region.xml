@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+    <!-- Start Seed Region -->
+    <record id="1" model="custom_table.region_thailand">
+      <field name="name">ภาคกลาง</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <record id="2" model="custom_table.region_thailand">
+      <field name="name">ภาคตะวันออก</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <record id="3" model="custom_table.region_thailand">
+      <field name="name">ภาคตะวันออกเฉียงเหนือ</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <record id="4" model="custom_table.region_thailand">
+      <field name="name">ภาคเหนือ</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <record id="5" model="custom_table.region_thailand">
+      <field name="name">ภาคตะวันตก</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <record id="6" model="custom_table.region_thailand">
+      <field name="name">ภาคใต้</field>
+      <field name="description">-</field>
+      <field name="is_active">True</field>
+    </record>
+    <!-- End Seed Region -->
+  </data>
+</odoo>

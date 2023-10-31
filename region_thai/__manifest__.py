@@ -25,7 +25,8 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'data/region.xml',
+        'data/province.xml',
     ],
     "application": True,
     'installable': True,# installable คือ ระบุว่าโมดูลสามารถติดตั้งได้หรือไม่
