@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Booking',# name คือ ชื่อของโมดูล
+    'name': 'Region Thai',# name คือ ชื่อของโมดูล
     'author': "Taweechai Yuenyang",
     "email": "taweechai.yuenyang@outlook.com",
     'website': 'https://abe27.github.io',
     'license': 'Other OSI approved licence',# license คือ หมวดหมู่หน่วยงานของโมดูล
-    'summary': 'รายการจัดการข้อมูล Booking',# summary คือ คำอธิบายสั้นๆ ของโมดูล
-    'description': 'ระบบจัดการข้อมูล Booking',# description คือ คำอธิบายยาวของโมดูล
+    'summary': 'รายการจัดการข้อมูลถูมิภาคและจังหวัดในประเทศไทย',# summary คือ คำอธิบายสั้นๆ ของโมดูล
+    'description': 'ระบบจัดการข้อมูลถูมิภาคและจังหวัดในประเทศไทย',# description คือ คำอธิบายยาวของโมดูล
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
