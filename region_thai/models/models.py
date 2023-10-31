@@ -59,6 +59,7 @@ class District(models.Model):
     _description = 'custom_table.district'
 
     province_id = fields.Many2one('custom_table.province', string="รหัสจังหวัด",  required=True)
+    code = fields.Char(size=20, string="รหัส")
     name = fields.Char(size=50, string="ชื่อ",  required=True)
     description = fields.Text(string="รายละเอียด")
     is_active = fields.Boolean(string="สถานะ", default=True)
@@ -69,14 +70,6 @@ class Tambon(models.Model):
 
     district_id = fields.Many2one('custom_table.district', string="รหัสอำเภอ",  required=True)
     name = fields.Char(size=50, string="ชื่อ",  required=True)
-    description = fields.Text(string="รายละเอียด")
-    is_active = fields.Boolean(string="สถานะ", default=True)
-
-class Zipcode(models.Model):
-    _name = 'custom_table.zipcode'
-    _description = 'custom_table.zipcode'
-
-    tambon_id = fields.Many2one('custom_table.tambon', string="รหัสตำบล",  required=True)
-    name = fields.Char(size=10, string="รหัสไปรษณี",  required=True)
+    zip_code = fields.Char(size=5, string="รหัสไปษณี")
     description = fields.Text(string="รายละเอียด")
     is_active = fields.Boolean(string="สถานะ", default=True)

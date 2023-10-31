@@ -27,6 +27,8 @@
     'demo': [
         'data/region.xml',
         'data/province.xml',
+        'data/amphur.xml',
+        'data/tambon.xml',
     ],
     "application": True,
     'installable': True,# installable คือ ระบุว่าโมดูลสามารถติดตั้งได้หรือไม่

@@ -2,12 +2,12 @@
   <data>
     <!-- Start Seed Region -->
     <record id="1" model="custom_table.region_thailand">
-      <field name="name">ภาคกลาง</field>
+      <field name="name">ภาคเหนือ</field>
       <field name="description">-</field>
       <field name="is_active">True</field>
     </record>
     <record id="2" model="custom_table.region_thailand">
-      <field name="name">ภาคตะวันออก</field>
+      <field name="name">ภาคกลาง</field>
       <field name="description">-</field>
       <field name="is_active">True</field>
     </record>
@@ -17,12 +17,12 @@
       <field name="is_active">True</field>
     </record>
     <record id="4" model="custom_table.region_thailand">
-      <field name="name">ภาคเหนือ</field>
+      <field name="name">ภาคตะวันตก</field>
       <field name="description">-</field>
       <field name="is_active">True</field>
     </record>
     <record id="5" model="custom_table.region_thailand">
-      <field name="name">ภาคตะวันตก</field>
+      <field name="name">ภาคตะวันออก</field>
       <field name="description">-</field>
       <field name="is_active">True</field>
     </record>
