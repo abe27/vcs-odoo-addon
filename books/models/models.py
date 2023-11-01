@@ -28,7 +28,7 @@ class Books(models.Model):
     ref_type = fields.Many2one('custom.ref_type.code', string="Ref. Type", required=True)
     code = fields.Char(size=10, string="Code", required=True)
     name = fields.Char(size=250, string="Name", required=True)
-    prefix = fields.Char(size=250, string="Prefix")
+    prefix = fields.Char(size=255, string="Prefix")
     description = fields.Text(string="Description")
     is_active = fields.Boolean(string="Is Active")
 
@@ -39,5 +39,14 @@ class BookingDetails(models.Model):
     booking_id = fields.Many2one('custom.books', string="Booking ID", required=True)
     factory_type = fields.Selection([('F','From WHS'), ('T', 'To WHS')], string="Select Type")
     whouse_id = fields.Many2one('custom.whouse', string="Whouse ID", required=True)
+    description = fields.Text(string="Description")
+    is_active = fields.Boolean(string="Is Active")
+    
+class BookingProcess(models.Model):
+    _name = 'custom.booking_process'
+    _description = 'custom.booking_process'
+    
+    booking_id = fields.Many2one('custom.books', string="Booking ID", required=True)
+    
     description = fields.Text(string="Description")
     is_active = fields.Boolean(string="Is Active")
