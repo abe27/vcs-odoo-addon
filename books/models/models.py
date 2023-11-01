@@ -3,6 +3,16 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
+class RefType(models.Model):
+    _name = 'custom.ref_type'
+    _description = 'custom.ref_type'
+
+    code = fields.Char(size=50, string="Code", required=True)
+    name = fields.Char(size=50, string="Name", required=True)
+    # code = fields.CharField(max_length=50, verbose_name="Code", unique=True, blank=False, null=False)
+    # name = fields.CharField(max_length=250, verbose_name="Name", blank=False, null=False)
+    # description = fields.TextField(verbose_name="Description",blank=True, null=True)
+    # is_active = fields.BooleanField(verbose_name="Is Active", default=True)
 
 class books(models.Model):
     _name = 'custom.books'
