@@ -3,36 +3,41 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
+class Whouse(models.Model):
+    _name = 'custom.whouse'
+    _description = 'custom.whouse'
+
+    code = fields.Char(size=10, string="Code", required=True)
+    name = fields.Char(size=50, string="Name", required=True)
+    description = fields.Text(string="Description")
+    is_active = fields.Boolean(string="Is Active")
+
 class RefType(models.Model):
     _name = 'custom.ref_type'
     _description = 'custom.ref_type'
 
-    code = fields.Char(size=50, string="Code", required=True)
+    code = fields.Char(size=10, string="Code", required=True)
     name = fields.Char(size=50, string="Name", required=True)
-    # code = fields.CharField(max_length=50, verbose_name="Code", unique=True, blank=False, null=False)
-    # name = fields.CharField(max_length=250, verbose_name="Name", blank=False, null=False)
-    # description = fields.TextField(verbose_name="Description",blank=True, null=True)
-    # is_active = fields.BooleanField(verbose_name="Is Active", default=True)
+    description = fields.Text(string="Description")
+    is_active = fields.Boolean(string="Is Active")
 
-class books(models.Model):
+class Books(models.Model):
     _name = 'custom.books'
     _description = 'custom.books'
 
-    name = fields.Char()
-    value = fields.Integer()
-    value2 = fields.Float(compute="_value_pc", store=True)
-    description = fields.Text()
-    # skid = models.CharField(max_length=50, verbose_name="Key", unique=True, blank=False, null=False)
-    # corporation_id = models.ForeignKey(Corporation, blank=True, null=True, on_delete=models.SET_NULL)
-    # order_type_id = models.ForeignKey(RefType, verbose_name="Type ID", on_delete=models.SET_NULL, null=True)
-    # filter_product_type = models.ManyToManyField(ProductType, blank=True, verbose_name="Filter Product Type ID",null=True)
-    # code = models.CharField(max_length=50, verbose_name="Code", blank=False, null=False)
-    # name = models.CharField(max_length=250, verbose_name="Name", blank=False, null=False)
-    # prefix = models.CharField(max_length=250, verbose_name="Prefix", blank=True, null=True)
-    # description = models.TextField(verbose_name="Description",blank=True, null=True)
-    # is_active = models.BooleanField(verbose_name="Is Active", default=True)
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+    ref_type = fields.Many2one('custom.ref_type.code', string="Ref. Type", required=True)
+    code = fields.Char(size=10, string="Code", required=True)
+    name = fields.Char(size=250, string="Name", required=True)
+    prefix = fields.Char(size=250, string="Prefix")
+    description = fields.Text(string="Description")
+    is_active = fields.Boolean(string="Is Active")
+
+class BookingDetails(models.Model):
+    _name = 'custom.book_detail'
+    _description = 'custom.book_detail'
+
+    booking_id = fields.Many2one('custom.books', string="Booking ID", required=True)
+    factory_type = fields.Selection([('F','From WHS'), ('T', 'To WHS')], string="Select Type")
+    whouse_id = fields.Many2one('custom.whouse', string="Whouse ID", required=True)
+    description = fields.Text(string="Description")
+    is_active = fields.Boolean(string="Is Active")
