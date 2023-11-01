@@ -25,7 +25,7 @@ class RegionThailand(models.Model):
     name = fields.Char(size=50, string="ชื่อ",  required=True)
     description = fields.Text(string="รายละเอียด")
     is_active = fields.Boolean(string="สถานะ", default=True)
-    
+
     # @api.constrains('name')
     # def _check_duplicate(self):
     #     for rec in self:
@@ -34,7 +34,7 @@ class RegionThailand(models.Model):
 
     #         if count > 0:
     #             raise ValidationError(("The Name should be unique"))
-    
+
 class Province(models.Model):
     _name = 'custom_table.province'
     _description = 'custom_table.province'
@@ -44,7 +44,7 @@ class Province(models.Model):
     name = fields.Char(size=50, string="ชื่อ",  required=True)
     description = fields.Text(string="รายละเอียด")
     is_active = fields.Boolean(string="สถานะ", default=True)
-    
+
     # @api.constrains('name')
     # def _check_duplicate(self):
     #     for rec in self:
@@ -53,7 +53,7 @@ class Province(models.Model):
 
     #         if count > 0:
     #             raise ValidationError(("The Name should be unique"))
-    
+
 class District(models.Model):
     _name = 'custom_table.district'
     _description = 'custom_table.district'
@@ -63,12 +63,13 @@ class District(models.Model):
     name = fields.Char(size=50, string="ชื่อ",  required=True)
     description = fields.Text(string="รายละเอียด")
     is_active = fields.Boolean(string="สถานะ", default=True)
-    
+
 class Tambon(models.Model):
     _name = 'custom_table.tambon'
     _description = 'custom_table.tambon'
 
-    district_id = fields.Many2one('custom_table.district', string="รหัสอำเภอ",  required=True)
+    district_id = fields.Many2one('custom_table.district.code', string="รหัสอำเภอ",  required=True)
+    code = fields.Char(size=20, string="รหัส", required=True)
     name = fields.Char(size=50, string="ชื่อ",  required=True)
     zip_code = fields.Char(size=5, string="รหัสไปษณี")
     description = fields.Text(string="รายละเอียด")

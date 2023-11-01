@@ -25,7 +25,7 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'data/demo.xml',
     ],
     "application": True,
     'installable': True,# installable คือ ระบุว่าโมดูลสามารถติดตั้งได้หรือไม่
